@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página não encontrada | Vettor Delta</title>
     <meta name="robots" content="noindex, nofollow">
+    <meta name="theme-color" content="#1a1620">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="assets/icone.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
@@ -79,12 +83,41 @@
             background: #e8bd87;
             transform: translateY(-2px);
         }
+
+        .btn:focus-visible {
+            outline: 3px solid #e8bd87;
+            outline-offset: 3px;
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 3.5rem;
+            }
+
+            h2 {
+                font-size: 1.25rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .btn {
+                transition: none;
+            }
+
+            .btn:hover {
+                transform: none;
+            }
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <img src="assets/logo_rapha_vetor.af_1_.png" alt="Vettor Delta" class="logo">
+        <img src="assets/logo_rapha_vetor.af_1_.png" alt="Logo Vettor Delta" class="logo" width="100" height="100">
         <h1>404</h1>
         <h2>Página não encontrada</h2>
         <p>A página que você procura não existe ou foi movida. Mas não se preocupe — a jornada continua.</p>
